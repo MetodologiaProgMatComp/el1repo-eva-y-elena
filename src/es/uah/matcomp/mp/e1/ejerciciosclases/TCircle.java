@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases;
 
-public class TCircle { // Save as "TestCircle.java"
+public class TCircle { // Save as "TestCircle.java" y
     public static void main(String[] args) {
         // Declare an instance of Circle class called c1.
         // Construct the instance c1 by invoking the "default" constructor
