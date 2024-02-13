@@ -1,6 +1,11 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases;
 
-public class TCircle { // Save as "TestCircle.java" y
+import java.awt.*;
+
+/**
+ * A Test Driver for the Circle class
+ */
+public class TCircle { // Save as "TestCircle.java"
     public static void main(String[] args) {
         // Declare an instance of Circle class called c1.
         // Construct the instance c1 by invoking the "default" constructor
@@ -9,6 +14,7 @@ public class TCircle { // Save as "TestCircle.java" y
         // Invoke public methods on instance c1, via dot operator.
         System.out.println("The circle has radius of "
                 + c1.getRadius() + " and area of " + c1.getArea());
+        System.out.println("The color is " + c1.getColor());
         //The circle has radius of 1.0 and area of 3.141592653589793
 
         // Declare an instance of class circle called c2.
@@ -18,6 +24,24 @@ public class TCircle { // Save as "TestCircle.java" y
         // Invoke public methods on instance c2, via dot operator.
         System.out.println("The circle has radius of "
                 + c2.getRadius() + " and area of " + c2.getArea());
+        System.out.println("The color is " + c2.getColor());
         //The circle has radius of 2.0 and area of 12.566370614359172
+
+        // Declare an instance of Circle class called c3.
+        // Construct the instance c3 by invoking the third constructor
+        //with the given radius and color.
+        Circle1 c3 = new Circle1(3.0,"blue");
+        // Invoke public methods on instance c3, via dot operator.
+        System.out.println("The circle has radius of "
+                + c3.getRadius() + " and area of " + c3.getArea());
+        System.out.println("The color is " + c3.getColor());
+        //The circle has radius of 3.0 and area of 28.274333882308138
+
+        Circle1 c4 = new Circle1();     //constructs an instance of Circle
+        c4.setRadius(-8);              //change radius
+        System.out.println("radius is: " + c4.getRadius());     //Print radius via getter
+
+        c4.setColor("green");
+        System.out.println("color is: " + c4.getColor());
     }
 }
