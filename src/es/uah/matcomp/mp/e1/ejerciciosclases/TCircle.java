@@ -43,5 +43,13 @@ public class TCircle { // Save as "TestCircle.java"
 
         c4.setColor("green");
         System.out.println("color is: " + c4.getColor());
+
+        Circle1 c5 = new Circle1(5.5);
+        System.out.println(c5.toString());  //explicit call
+
+        Circle1 c6 = new Circle1(6.6);
+        System.out.println(c6.toString());  //explicit call
+        System.out.println(c6);   //println() calls toString() implicitly same as above
+        System.out.println("Operator '+' invokes toString() too: " + c6);   // '+' invokes toString() too
     }
 }
