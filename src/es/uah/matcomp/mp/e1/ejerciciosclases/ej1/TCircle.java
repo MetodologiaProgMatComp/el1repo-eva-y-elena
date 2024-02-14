@@ -1,6 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases;
-
-import java.awt.*;
+package es.uah.matcomp.mp.e1.ejerciciosclases.ej1;
 
 /**
  * A Test Driver for the Circle class
