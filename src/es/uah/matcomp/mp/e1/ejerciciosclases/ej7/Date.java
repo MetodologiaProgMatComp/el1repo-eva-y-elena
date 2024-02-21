@@ -43,6 +43,16 @@ public class Date {
     }
 
     public String toString(){
+        String s;
+        if (day<10){
+            s = ("0"+day);
+            day = Integer.parseInt(s);
+        }
+        if (month<10){
+            s = ("0"+day);
+            day= Integer.parseInt(s);
+        }
+
         return day + "/" + month + "/" + year;
     }
 }
