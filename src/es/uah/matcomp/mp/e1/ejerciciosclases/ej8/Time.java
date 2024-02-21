@@ -47,26 +47,29 @@ public class Time {
         if (second < 10) {
             second0 = "0" + second;
         }
-
+        else {second0 = String.valueOf(second);
+        }
         if (minute < 10) {
             minute0 = "0" + minute;
         }
-
+        else {minute0 = String.valueOf(minute);
+        }
         if (hour < 10) {
             hour0 = "0" + hour;
         }
-
+        else {hour0 = String.valueOf(hour);
+        }
         return hour0 + ":" + minute0 + ":" + second0;
     }
 
     public Time nextSecond() {
-        ++second;
+        second+=1;
         if (second == 60) {
             second = 0;
-            ++minute;
+            minute+=1;
             if (minute == 60) {
                 minute = 0;
-                ++hour;
+                hour+=1;
                 if (hour == 24) {
                     hour = 0;
                 }
@@ -76,13 +79,13 @@ public class Time {
     }
 
     public Time previousSecond() {
-        --second;
+        second-=1;
         if (second == -1) {
             second = 59;
-            --minute;
+            minute-=1;
             if (minute == -1) {
                 minute = 59;
-                --hour;
+                hour-=1;
                 if (hour == -1) {
                     hour = 23;
                 }

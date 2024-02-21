@@ -5,7 +5,9 @@ public class Date {
     private int day;
     private int month;
     private int year;
-
+    private String day0;
+    private String month0;
+    private String year0;
     public Date(int day, int month, int year) {
         this.day = day;
         this.month = month;
@@ -43,16 +45,21 @@ public class Date {
     }
 
     public String toString(){
-        String s;
-        if (day<10){
-            s = ("0"+day);
-            day = Integer.parseInt(s);
-        }
-        if (month<10){
-            s = ("0"+day);
-            day= Integer.parseInt(s);
+        if (day < 10) {
+            day0 = "0" + day;}
+        else {day0 = String.valueOf(day);
+            }
+
+        if (month < 10) {
+            month0 = "0" + month;}
+        else {month0 = String.valueOf(month);
         }
 
-        return day + "/" + month + "/" + year;
+        if (year < 10) {
+            year0 = "0" + year;}
+        else {year0 = String.valueOf(year);
+        }
+
+        return day0 + "/" + month0 + "/" + year0;
     }
 }
