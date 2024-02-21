@@ -36,7 +36,7 @@ public class TCircle { // Save as "TestCircle.java"
         //The circle has radius of 3.0 and area of 28.274333882308138
 
         Circle1 c4 = new Circle1();     //constructs an instance of Circle
-        c4.setRadius(-8);              //change radius
+        c4.setRadius(8);              //change radius
         System.out.println("radius is: " + c4.getRadius());     //Print radius via getter
 
         c4.setColor("green");
