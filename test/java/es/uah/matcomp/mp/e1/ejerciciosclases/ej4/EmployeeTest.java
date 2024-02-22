@@ -54,7 +54,7 @@ class EmployeeTest {
     void raiseSalary() {
         Employee e = new Employee(8,"Peter", "Tan", 999);
         assertDoesNotThrow(() -> e.raiseSalary(10));
-        assertEquals(1098, e.raiseSalary(10));
+        assertEquals(1207, e.raiseSalary(10));
     }
 
     @Test
