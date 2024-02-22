@@ -45,6 +45,7 @@ class InvoiceItemTest {
     @Test
     void getTotal() {
         InvoiceItem e = new InvoiceItem("A101", "Pen Red", 999, 0.99);
+        assertEquals(989.01, e.getTotal());
         assertDoesNotThrow(() -> e.getTotal());
     }
 
