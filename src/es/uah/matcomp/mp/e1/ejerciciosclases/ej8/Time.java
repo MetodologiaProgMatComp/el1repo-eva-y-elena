@@ -7,7 +7,7 @@ public class Time {
     private String second0;
     private String minute0;
     private String hour0;
-    public Time(int day, int month, int year) {
+    public Time(int hour, int minute, int second) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
