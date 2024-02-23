@@ -11,6 +11,7 @@ class BallTest {
     void getX() {
         Ball b = new Ball(1.1f, 2.2f, 10, 3.3f, 4.4f);
         assertDoesNotThrow(() -> b.getX());
+        assertEquals(1.1f, b.getX());
     }
 
     @Test
@@ -23,6 +24,7 @@ class BallTest {
     void getY() {
         Ball b = new Ball(1.1f, 2.2f, 10, 3.3f, 4.4f);
         assertDoesNotThrow(() -> b.getY());
+        assertEquals(2.2f, b.getY());
     }
 
     @Test
@@ -35,6 +37,7 @@ class BallTest {
     void getRadius() {
         Ball b = new Ball(1.1f, 2.2f, 10, 3.3f, 4.4f);
         assertDoesNotThrow(() -> b.getRadius());
+        assertEquals(10, b.getRadius());
     }
 
     @Test
@@ -47,6 +50,7 @@ class BallTest {
     void getXDelta() {
         Ball b = new Ball(1.1f, 2.2f, 10, 3.3f, 4.4f);
         assertDoesNotThrow(() -> b.getXDelta());
+        assertEquals(3.3f, b.getXDelta());
     }
 
     @Test
@@ -59,6 +63,7 @@ class BallTest {
     void getYDelta() {
         Ball b = new Ball(1.1f, 2.2f, 10, 3.3f, 4.4f);
         assertDoesNotThrow(() -> b.getYDelta());
+        assertEquals(4.4f, b.getYDelta());
     }
 
     @Test

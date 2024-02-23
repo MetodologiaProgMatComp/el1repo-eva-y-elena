@@ -11,6 +11,7 @@ class TimeTest {
     void getHour() {
         Time t = new Time(1,2,3);
         assertDoesNotThrow(() -> t.getHour());
+        assertEquals(1, t.getHour());
     }
 
     @Test
@@ -23,6 +24,7 @@ class TimeTest {
     void getMinute() {
         Time t = new Time(1,2,3);
         assertDoesNotThrow(() -> t.getMinute());
+        assertEquals(2, t.getMinute());
     }
 
     @Test
@@ -35,6 +37,7 @@ class TimeTest {
     void getSecond() {
         Time t = new Time(1,2,3);
         assertDoesNotThrow(() -> t.getSecond());
+        assertEquals(3, t.getSecond());
     }
 
     @Test

@@ -11,18 +11,21 @@ class AccountTest {
     void getID() {
         Account e = new Account("A101", "Tan Ah Teck", 88);
         assertDoesNotThrow(() -> e.getID());
+        assertEquals("A101", e.getID());
     }
 
     @Test
     void getName() {
         Account e = new Account("A101", "Tan Ah Teck", 88);
         assertDoesNotThrow(() -> e.getName());
+        assertEquals("Tan Ah Teck", e.getName());
     }
 
     @Test
     void getBalance() {
         Account e = new Account("A101", "Tan Ah Teck", 88);
         assertDoesNotThrow(() -> e.getBalance());
+        assertEquals(88, e.getBalance());
     }
 
     @Test

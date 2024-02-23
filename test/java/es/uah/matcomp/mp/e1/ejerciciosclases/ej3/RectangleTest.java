@@ -12,6 +12,7 @@ class RectangleTest {
     void getLength() {
         Rectangle r = new Rectangle();
         assertDoesNotThrow(() -> r.getLength());
+        assertEquals(1.0f, r.getLength());
     }
 
     @Test
@@ -24,6 +25,7 @@ class RectangleTest {
     void getWidth() {
         Rectangle r = new Rectangle();
         assertDoesNotThrow(() -> r.getWidth());
+        assertEquals(1.0f, r.getWidth());
     }
 
     @Test

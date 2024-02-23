@@ -12,6 +12,7 @@ class CircleTest {
     void getRadius() {
         Circle c = new Circle();
         assertDoesNotThrow(() -> c.getRadius());
+        assertEquals(1.0, c.getRadius());
     }
 
     @Test

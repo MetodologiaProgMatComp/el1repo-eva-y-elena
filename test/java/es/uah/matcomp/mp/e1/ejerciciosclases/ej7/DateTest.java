@@ -11,18 +11,21 @@ class DateTest {
     void getDay() {
         Date d = new Date(1,2,2014);
         assertDoesNotThrow(() -> d.getDay());
+        assertEquals(1,d.getDay());
     }
 
     @Test
     void getMonth() {
         Date d = new Date(1,2,2014);
         assertDoesNotThrow(() -> d.getMonth());
+        assertEquals(2,d.getMonth());
     }
 
     @Test
     void getYear() {
         Date d = new Date(1,2,2014);
         assertDoesNotThrow(() -> d.getYear());
+        assertEquals(2014, d.getYear());
     }
 
     @Test

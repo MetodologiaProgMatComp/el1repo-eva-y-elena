@@ -10,18 +10,21 @@ class InvoiceItemTest {
     void getId() {
         InvoiceItem e = new InvoiceItem("A101", "Pen Red", 888, 0.08);
         assertDoesNotThrow(() -> e.getId());
+        assertEquals("A101", e.getId());
     }
 
     @Test
     void getDesc() {
         InvoiceItem e = new InvoiceItem("A101", "Pen Red", 888, 0.08);
         assertDoesNotThrow(() -> e.getDesc());
+        assertEquals("Pen Red", e.getDesc());
     }
 
     @Test
     void getQty() {
         InvoiceItem e = new InvoiceItem("A101", "Pen Red", 888, 0.08);
         assertDoesNotThrow(() -> e.getQty());
+        assertEquals(888, e.getQty());
     }
 
     @Test
@@ -34,6 +37,7 @@ class InvoiceItemTest {
     void getUnitPrice() {
         InvoiceItem e = new InvoiceItem("A101", "Pen Red", 888, 0.08);
         assertDoesNotThrow(() -> e.getUnitPrice());
+        assertEquals(0.08, e.getUnitPrice());
     }
 
     @Test
