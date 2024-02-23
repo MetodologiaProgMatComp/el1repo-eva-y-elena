@@ -76,15 +76,18 @@ class BallTest {
     @Test
     void reflectHorizontal() {
         Ball b = new Ball(80.0f, 35.0f, 5, 4.0f, 6.0f);
-        b = b.move();
         assertDoesNotThrow(() -> b.reflectHorizontal());
     }
 
     @Test
     void reflectVertical() {
+        Ball b = new Ball(80.0f, 35.0f, 5, 4.0f, 6.0f);
+        assertDoesNotThrow(() -> b.reflectVertical());
     }
 
     @Test
     void testToString() {
+        Ball b = new Ball(80.0f, 35.0f, 5, 4.0f, 6.0f);
+        assertDoesNotThrow(() -> b.toString());
     }
 }
