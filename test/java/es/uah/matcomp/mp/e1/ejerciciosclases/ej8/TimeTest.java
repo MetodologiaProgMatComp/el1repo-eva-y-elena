@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.ej8;
 
-import es.uah.matcomp.mp.e1.ejerciciosclases.ej7.Date;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.ej2;
 
-import es.uah.matcomp.mp.e1.ejerciciosclases.ej1.Circle1;
 import org.junit.jupiter.api.Test;
 
 import static java.lang.Math.round;

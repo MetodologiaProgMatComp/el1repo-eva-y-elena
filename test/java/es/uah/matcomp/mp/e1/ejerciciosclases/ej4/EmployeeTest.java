@@ -1,6 +1,5 @@
 package es.uah.matcomp.mp.e1.ejerciciosclases.ej4;
 
-import es.uah.matcomp.mp.e1.ejerciciosclases.ej3.Rectangle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
