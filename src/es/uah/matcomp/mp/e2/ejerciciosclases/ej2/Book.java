@@ -45,9 +45,7 @@ public class Book {
 
         return "Book[name=" + name + "," + authors + ",price=" + price + ",qty=" + qty + "]";
     }
-    public String getAuthorNames() {
-        return name;
-    }
+
 
 }
 
