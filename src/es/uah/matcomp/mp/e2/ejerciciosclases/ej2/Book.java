@@ -1,5 +1,7 @@
 package es.uah.matcomp.mp.e2.ejerciciosclases.ej2;
 
+import es.uah.matcomp.mp.e2.ejerciciosclases.ej6.MyPoint;
+
 public class Book {
     private String name;
     private Author[] authors;
@@ -45,8 +47,15 @@ public class Book {
 
         return "Book[name=" + name + "," + authors + ",price=" + price + ",qty=" + qty + "]";
     }
+    public String getAuthorNames() {
+        for (int i = 0; i < authors.length; i++)
+            return authors.getName()[i];
+    }
+
 
 
 }
+
+
 
 
