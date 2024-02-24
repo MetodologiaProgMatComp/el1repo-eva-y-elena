@@ -18,7 +18,7 @@ public class TestMain {
         System.out.println("balance is: " + inv1.getBalance());
         System.out.println("customer's name is: " + inv1.getCustomerName());
         System.out.println("customer's deposit is: " + inv1.deposit(9));
-        System.out.println("customer's withdraw is: " + inv1.withdraw(9));
+        System.out.println("customer's withdraw is: " + inv1.withdraw(1000));
     }
 }
 

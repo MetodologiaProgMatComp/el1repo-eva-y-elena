@@ -12,7 +12,7 @@ public class Account {
     public Account(int id, Customer customer){
         this.id = id;
         this.customer = customer;
-        balance = 0;
+        balance = 0.0;
     }
 
     public int getId() {
@@ -31,23 +31,22 @@ public class Account {
         this.balance = balance;
     }
     public String toString() {
-        return customer + "balance=$" + balance;
+        return customer + String.format("%.2f", balance);
     }
     public String getCustomerName(){
         return customer.getName();
     }
-    public double deposit(double amount){
-        return balance+=amount;
+    public Account deposit(double amount){
+        balance+=amount;
+        return this;
     }
-    public double withdraw(double amount){
+    public Account withdraw(double amount){
         if (balance >= amount){
-            return balance -= amount;
+            balance -= amount;
         }
         else{
             System.out.println("amount withdrawn exceeds the current balance!");
-            return balance;
         }
-
-
+        return this;
     }
 }
