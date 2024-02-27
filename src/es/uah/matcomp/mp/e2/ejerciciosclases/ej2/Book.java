@@ -47,10 +47,8 @@ public class Book {
 
         return "Book[name=" + name + "," + authors + ",price=" + price + ",qty=" + qty + "]";
     }
-    public String getAuthorNames() {
-        for (int i = 0; i < authors.length; i++)
-            return authors.getName()[i];
-    }
+
+
 
 
 
