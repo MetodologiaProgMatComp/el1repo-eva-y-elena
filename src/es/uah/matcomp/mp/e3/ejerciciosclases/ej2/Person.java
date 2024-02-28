@@ -15,8 +15,6 @@ public class Person {
     public void setAddress(String address) {
         this.address = address;
     }
-
-    @Override
     public String toString() {
         return "Person[name=" + name + ",address=" + address + "]";
     }

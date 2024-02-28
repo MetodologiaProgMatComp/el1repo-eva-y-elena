@@ -5,6 +5,7 @@ public class TestCylinder { // save as "TestCylinder.java"
         // Declare and allocate a new instance of cylinder
         // with default color, radius, and height
         Cylinder c1 = new Cylinder();
+        System.out.println(c1);
         System.out.println("Cylinder:"
                 + " radius=" + c1.getRadius()
                 + " height=" + c1.getHeight()
