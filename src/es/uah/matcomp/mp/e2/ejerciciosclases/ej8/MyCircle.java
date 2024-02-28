@@ -57,7 +57,7 @@ public class MyCircle {
 
     }
     public double getArea(){
-        return Math.PI*(radius^2);}
+        return Math.PI*(radius*radius);}
     public double getCircumference(){
         return 2*Math.PI*radius;}
     public double distance(MyCircle another){
