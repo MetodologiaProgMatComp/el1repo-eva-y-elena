@@ -4,8 +4,7 @@ public class Point3D extends Point2D{
     private float z;
 
     public Point3D(float x, float y, float z) {
-        setX(x);
-        setY(y);
+        super(x,y);
         this.z = z;
     }
 
