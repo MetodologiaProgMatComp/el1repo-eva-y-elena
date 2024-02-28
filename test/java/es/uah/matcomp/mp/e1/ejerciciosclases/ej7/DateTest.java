@@ -54,6 +54,8 @@ class DateTest {
     @Test
     void testToString() {
         Date d = new Date(1,2,2014);
+        Date d1 = new Date(10,11,4);
         assertDoesNotThrow(() -> d.toString());
+        assertDoesNotThrow(()->d1.toString());
     }
 }

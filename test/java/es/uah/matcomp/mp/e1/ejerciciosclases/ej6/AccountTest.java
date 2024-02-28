@@ -39,6 +39,7 @@ class AccountTest {
         Account e = new Account("A101", "Tan Ah Teck", 188);
         assertEquals(138, e.debit(50));
         assertDoesNotThrow(() -> e.debit(50));
+        assertDoesNotThrow(()->e.debit(200));
     }
 
     @Test

@@ -54,18 +54,24 @@ class TimeTest {
     @Test
     void testToString() {
         Time t = new Time(1,2,3);
+        Time t1 = new Time(10,20,30);
         assertDoesNotThrow(() -> t.toString());
+        assertDoesNotThrow(()-> t1.toString());
     }
 
     @Test
     void nextSecond() {
         Time t = new Time(23,59,58);
+        Time t1 = new Time(23,59,59);
         assertDoesNotThrow(() -> t.nextSecond());
+        assertDoesNotThrow(()-> t1.nextSecond());
     }
 
     @Test
     void previousSecond() {
         Time t = new Time(23,59,58);
+        Time t1 = new Time(00,00,00);
         assertDoesNotThrow(() -> t.previousSecond());
+        assertDoesNotThrow(()-> t1.previousSecond());
     }
 }
