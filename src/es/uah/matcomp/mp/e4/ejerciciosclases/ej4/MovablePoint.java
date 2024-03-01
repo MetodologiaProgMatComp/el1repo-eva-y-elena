@@ -1,6 +1,6 @@
-package es.uah.matcomp.mp.e4.ejerciciosclases.ej3;
+package es.uah.matcomp.mp.e4.ejerciciosclases.ej4;
 
-public class MovablePoint implements Movable {
+public class MovablePoint implements Movable{
     int x;
     int y;
     int xSpeed;
@@ -18,7 +18,7 @@ public class MovablePoint implements Movable {
     }
     @Override
     public void moveUp(){
-            this.y = y-=ySpeed;
+        this.y = y-=ySpeed;
     }
     @Override
     public void moveDown(){
