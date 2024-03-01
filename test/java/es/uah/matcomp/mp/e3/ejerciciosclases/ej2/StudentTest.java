@@ -10,7 +10,7 @@ class StudentTest {
     void getProgram() {
         Student s = new Student("Maria", "Madrid","bueno", 6, 100.0);
         assertDoesNotThrow(() -> s.getProgram());
-        assertEquals("Madrid", s.getProgram());
+        assertEquals("bueno", s.getProgram());
     }
 
     @Test
@@ -47,5 +47,8 @@ class StudentTest {
 
     @Test
     void testToString() {
+        Student s = new Student("Maria", "Madrid","bueno", 6, 100.0);
+        assertDoesNotThrow(() -> s.toString());
+        assertEquals("Student[Person[name=Maria,address=Madrid],program=bueno,year=6,fee=100.0]", s.toString());
     }
 }
