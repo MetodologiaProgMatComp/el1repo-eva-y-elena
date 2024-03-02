@@ -1,4 +1,5 @@
-package es.uah.matcomp.mp.e3.ejerciciosclases.ej1;
+package es.uah.matcomp.mp.e3.ejerciciosclases.ej8;
+
 
 import org.junit.jupiter.api.Test;
 
@@ -38,11 +39,10 @@ class CylinderTest {
         Cylinder c2 = new Cylinder(2);
         Cylinder c3 = new Cylinder(2,3);
         assertDoesNotThrow(() -> c1.toString());
-        assertEquals("Cylinder: subclass of Circle [radius= 1.0 color= red] height=1.0", c1.toString());
+        assertEquals("Cylinder: composes of Circle [radius= 1.0 color= red] height=1.0", c1.toString());
         assertDoesNotThrow(() -> c2.toString());
-        assertEquals("Cylinder: subclass of Circle [radius= 1.0 color= red] height=2.0", c2.toString());
+        assertEquals("Cylinder: composes of Circle [radius= 1.0 color= red] height=2.0", c2.toString());
         assertDoesNotThrow(() -> c3.toString());
-        assertEquals("Cylinder: subclass of Circle [radius= 2.0 color= red] height=3.0", c3.toString());
-
+        assertEquals("Cylinder: composes of Circle [radius= 2.0 color= red] height=3.0", c3.toString());
     }
 }
