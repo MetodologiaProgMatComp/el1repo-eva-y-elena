@@ -6,8 +6,9 @@ public class MovableCircle implements Movable{
     int radius;
     MovablePoint center;
 
-    public MovableCircle(int x, int y, int xSpeed, int ySpeed) {
+    public MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius) {
         center = new MovablePoint(x, y, xSpeed, ySpeed);
+        this.radius = radius;
     }
 
     public String toString() {
