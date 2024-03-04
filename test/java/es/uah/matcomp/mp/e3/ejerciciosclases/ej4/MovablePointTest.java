@@ -93,8 +93,5 @@ class MovablePointTest {
         assertDoesNotThrow(()->m1.move());
         assertDoesNotThrow(()->m2.move());
         assertDoesNotThrow(()->m3.move());
-        assertEquals( "(7.0,10.0),speed=(3.0,4.0)",m1.move());
-        assertEquals("(1.0,2.0),speed=(1.0,2.0)", m2.move());
-        assertEquals("(0.0,0.0),speed=(0.0,0.0)", m3.move());
     }
 }

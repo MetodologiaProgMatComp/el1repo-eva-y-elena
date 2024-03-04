@@ -19,7 +19,6 @@ public class TestMain {
         System.out.println("Perímetro antes: " + r.getPerimeter());
         System.out.println("Área antes: " + r.getArea());
 
-        // Redimensionar el círculo y mostrar su perímetro y área después de la redimension
         r.resize(150);
         System.out.println("Circulo despues: " + r);
         System.out.println("Perímetro despues: " + r.getPerimeter());
